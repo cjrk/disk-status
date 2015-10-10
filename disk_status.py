@@ -6,10 +6,10 @@ import re
 
 DD_DEFAULT_SIZE = 500
 
-RE_HDPARM_CACHED	= r'Timing cached reads:.+?= ([0-9.]+) (\w\w/sec)'
-RE_HDPARM_BUFFERED	= r'Timing buffered disk reads:.+?= ([0-9.]+) (\w\w/sec)'
+RE_HDPARM_CACHED	= r'Timing cached reads:.+?=\s*([0-9.]+) (\w\w/sec)'
+RE_HDPARM_BUFFERED	= r'Timing buffered disk reads:.+?=\s*([0-9.]+) (\w\w/sec)'
 # DD Constants
-RE_DD				= r'([0-9.,]+) (\w\w/s)'
+RE_DD			= r'([0-9.,]+) (\w\w/s)'
 # Smart Constants
 RE_SMART_HEALTH		= r'SMART overall-health self-assessment test result: (\w+)'
 
